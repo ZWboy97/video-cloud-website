@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Voopo - VOIP, Telecom and Cloud Services Template </title>
+    <title>易播 - 联系我们</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,6 +25,8 @@
 
     <!-- Modernizer js -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=Emw7cc1LxbMT3DVrmbfLOwYuD0V7c7bL"></script>
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
                     <div class="col-lg-3">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="images/logo/voopo.png" alt="voopo">
+                                <img src="images/logo/logo.png" alt="voopo">
                             </a>
                         </div>
                     </div>
@@ -47,22 +49,18 @@
                         <nav class="mainmenu__nav">
                             <ul class="mainmenu">
                                 <li class="drop">
-                                    <a href="index.html">Home</a>
-                                    <ul class="dropdown__menu">
-                                        <li><a href="index.html">Home version 01</a></li>
-                                        <li><a href="index-2.html">Home version 02</a></li>
-                                    </ul>
+                                    <a href="index.html">首页</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Service</a>
+                                    <a href="#">产品服务</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="#">解决方案</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Blog</a>
+                                    <a href="#">关于我们</a>
                                 </li>
-                                <li class="drop">
+                                <!-- <li class="drop">
                                     <a href="#">pages</a>
                                     <ul class="dropdown__menu">
                                         <li><a href="blog.html">Blog</a></li>
@@ -70,26 +68,26 @@
                                         <li><a href="cart.html">Cart Page</a></li>
                                         <li><a href="checkout.html">Checkout Page</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="#">联系我们</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-lg-3">
                         <div class="header__btn">
-                            <a class="voopo__btn white__btn" href="#">Buy Now</a>
+                            <a class="voopo__btn white__btn" target="_blank" href="http://admin.jackchance.cn">免费试用</a>
                         </div>
                     </div>
                 </div>
                 <!-- Mobile Menu -->
                 <div class="mobile-menu d-block d-lg-none">
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo/voopo.png" alt="voopo voip"></a>
+                        <a href="index.html"><img src="images/logo/logo.png" alt="voopo voip"></a>
                     </div>
                     <div class="header__btn">
-                        <a class="voopo__btn white__btn" href="#">Buy Now</a>
+                        <a class="voopo__btn white__btn" href="http://admin.jackchance.cn">免费试用</a>
                     </div>
                 </div>
                 <!-- Mobile Menu -->
@@ -102,31 +100,59 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-left">
-                            <h2 class="bradcaump-title">Contact</h2>
+                            <h2 class="bradcaump-title">Contact Us</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Start Contact Address -->
+        <div class="voopo__address bg--cart-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-7 col-sm-12 col-12">
+                        <div class="vp__contact__address">
+                            <h2>我们的联系方式</h2>
+                            <div class="vp__address__container">
+                                <!-- Start Single Address -->
+                                <div class="vp__address">
+                                    <h4>地址</h4>
+                                    <p>Doemon Demon 77/h9 South Road, USA - 009877</p>
+                                    <h4>电话</h4>
+                                    <p><a href="#">+1 (22) 555 999 966</a></p>
+                                </div>
+                                <!-- End Single Address -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goggle__map">
+                <div id="allmap"></div>
+            </div>
+        </div>
+        <!-- End Contact Address -->
+        <!-- End Bradcaump area -->
         <!-- Start Contact Area -->
         <div class="voopo__contact ptb--110">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="voopo__contact__form">
-                            <h2>If you need to contact us, Please fill out the form below.</h2>
+                            <h2>如果您需要联系我们，请填写下表.</h2>
                             <form id="contact-form" action="mail.php" method="post">
                                 <div class="single-contact-form">
-                                    <input type="text" name="name" placeholder="Type Your Name">
+                                    <input type="text" name="name" placeholder="输入您的名字">
                                 </div>
                                 <div class="single-contact-form">
-                                    <input type="email" name="email" placeholder="Type Your e-mail">
+                                    <input type="email" name="email" placeholder="输入您的邮箱">
                                 </div>
                                 <div class="single-contact-form message">
-                                    <textarea name="message"  placeholder="Type Your Message"></textarea>
+                                    <textarea name="message" placeholder="输入您的消息"></textarea>
                                 </div>
                                 <div class="contact-btn">
-                                    <button class="voopo__btn" type="submit">Send</button>
+                                    <button class="voopo__btn" type="submit">提交</button>
                                 </div>
                             </form>
                             <div class="form-output">
@@ -143,129 +169,129 @@
             </div>
         </div>
         <!-- End Contact Area -->
-        <!-- Start Contact Address -->
-        <div class="voopo__address bg--cart-10">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-7 col-sm-12 col-12">
-                        <div class="vp__contact__address">
-                            <h2>Out Contact Info</h2>
-                            <div class="vp__address__container">
-                                <!-- Start Single Address -->
-                                <div class="vp__address">
-                                    <h4>Address</h4>
-                                    <p>Doemon Demon 77/h9 South Road, USA - 009877</p>
+        <!-- Footer Area -->
+        <footer id="footer" class="footer-area footer--2">
+            <div class="footer__top bg--cart-7">
+                <div class="container">
+                    <div class="row">
+                        <!-- Start Single Wedget -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="single__wedget">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/logo/logo2.png" alt="voip">
+                                    </a>
                                 </div>
-                                <!-- End Single Address -->
-                                <!-- Start Single Address -->
-                                <div class="vp__address">
-                                    <h4>Address</h4>
-                                    <p><a href="#">demovoopo.mail.com</a></p>
-                                    <p><a href="#">demo.mailvoopo.info</a></p>
+                                <div class="content">
+                                    <p>专业的互联网视频分发SaaS服务平台<br /><br /> 助力企业轻松拥有自己的视频门户</p>
                                 </div>
-                                <!-- End Single Address -->
-                                <!-- Start Single Address -->
-                                <div class="vp__address">
-                                    <h4>Address</h4>
-                                    <p><a href="#">+1 (22) 555 666 999</a></p>
-                                    <p><a href="#">+1 (22) 555 999 966</a></p>
-                                </div>
-                                <!-- End Single Address -->
+                            </div>
+                        </div>
+                        <!-- End Single Wedget -->
+                        <!-- Start Single Wedget -->
+                        <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 xs__mt--40">
+                            <div class="single__wedget">
+                                <h2 class="ft__title">产品与服务</h2>
+                                <ul class="ft__contact__link">
+                                    <li>
+                                        <a href="#">视频点播服务</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">视频直播服务</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">直播云导播台</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">视频特效处理</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">智能大数据分析</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Wedget -->
+                        <!-- Start Single Wedget -->
+                        <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 sm__mt--40 md__mt--40">
+                            <div class="single__wedget">
+                                <h2 class="ft__title">解决方案</h2>
+                                <ul class="ft__contact__link">
+                                    <li>
+                                        <a href="#">校园直播</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">在线教育</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">全景直播</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">旅游直播</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">更多场景</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Wedget -->
+                        <!-- Start Single Wedget -->
+                        <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 sm__mt--40 md__mt--40">
+                            <div class="single__wedget">
+                                <h2 class="ft__title">关于我们</h2>
+                                <ul class="ft__contact__link">
+                                    <li>
+                                        <a href="#">关于易播</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">产品日志</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">联系我们</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Wedget -->
+                    </div>
+                </div>
+            </div>
+            <div class="copyright bg--cart-8">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="copyright__inner">
+                                <p>Copyright ©2019 易播 All right <a href="http://www.bootstrapmb.com/"
+                                        title="bootstrapmb">Reserved</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="ft__social__link">
+                                <!-- <ul class="social-icon">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="zmdi zmdi-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="zmdi zmdi-vimeo"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="zmdi zmdi-pinterest"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="goggle__map">
-                <div id="googleMap"></div>
-            </div>
-        </div>
-        <!-- End Contact Address -->
-        <!-- End Bradcaump area -->
-		<!-- Footer Area -->
-		<footer id="footer" class="footer-area">
-			<div class="footer__top bg--cart-2">
-				<div class="container">
-					<div class="row">
-						<!-- Start Single Wedget -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-							<div class="single__wedget">
-								<div class="logo">
-									<a href="index.html"><img src="images/logo/voopo.png" alt="voip"></a>
-								</div>
-								<div class="content">
-									<p>There are variations of passages of Lorem Ipsum available, the majority have suffered alteration.</p>
-								</div>
-							</div>
-						</div>	
-						<!-- End Single Wedget -->
-						<!-- Start Single Wedget -->
-						<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 xs__mt--40">
-							<div class="single__wedget">
-								<h2 class="ft__title">Help Line</h2>
-								<ul class="ft__contact__link">
-									<li><a href="#">Cloud Phone Service</a></li>
-									<li><a href="#">Media Relation</a></li>
-									<li><a href="#">Business Program</a></li>
-									<li><a href="#">Home Service</a></li>
-									<li><a href="#">Service Guide</a></li>
-								</ul>
-							</div>
-						</div>	
-						<!-- End Single Wedget -->
-						<!-- Start Single Wedget -->
-						<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 sm__mt--40 md__mt--40">
-							<div class="single__wedget">
-								<h2 class="ft__title">Voopo Info</h2>
-								<ul class="ft__contact__link">
-									<li><a href="#">Why Voopo</a></li>
-									<li><a href="#">Voopo Pricing</a></li>
-									<li><a href="#">VoIP Features</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">About us</a></li>
-								</ul>
-							</div>
-						</div>	
-						<!-- End Single Wedget -->
-						<!-- Start Single Wedget -->
-						<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 sm__mt--40 md__mt--40">
-							<div class="single__wedget">
-								<h2 class="ft__title">Resources</h2>
-								<ul class="ft__contact__link">
-									<li><a href="#">Voopo Support</a></li>
-									<li><a href="#">Customer Center</a></li>
-									<li><a href="#">Blogs</a></li>
-									<li><a href="#">Home Service</a></li>
-									<li><a href="#">Live Chat</a></li>
-								</ul>
-							</div>
-						</div>	
-						<!-- End Single Wedget -->
-					</div>
-				</div>
-			</div>	
-			<div class="copyright bg--cart-3">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="copyright__inner">
-								<p>Copyright © All right <a href="http://www.bootstrapmb.com/" title="bootstrapmb">Reserved</a></p>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-12">
-							<div class="ft__social__link">
-								<ul class="social-icon">
-									<li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-									<li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-									<li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- //Footer Area -->
+        </footer>
+        <!-- //Footer Area -->
 
     </div>
     <!-- //Main wrapper -->
@@ -275,231 +301,21 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-	    <!-- Google Map js -->
-	    <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
-	    <script>
-	    
-	        google.maps.event.addDomListener(window, 'load', init);
-
-	        function init() {
-	        
-	            var mapOptions = {
-	               
-	                zoom: 12,
-
-	                scrollwheel: false,
-
-	           
-	                center: new google.maps.LatLng(23.7286, 90.3854), 
- 
-	                 styles:
-					[
-   {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#444444"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "saturation": "-100"
-            },
-            {
-                "lightness": "57"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "lightness": "1"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 45
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.bus",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.bus",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "saturation": "0"
-            },
-            {
-                "lightness": "0"
-            },
-            {
-                "gamma": "1.00"
-            },
-            {
-                "weight": "1"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.bus",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "saturation": "-100"
-            },
-            {
-                "weight": "1"
-            },
-            {
-                "lightness": "0"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.rail",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.rail",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "gamma": "1"
-            },
-            {
-                "lightness": "40"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.rail",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "saturation": "-100"
-            },
-            {
-                "lightness": "30"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#d2d2d2"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    }
-					]
-	            };
-
-	         
-	            var mapElement = document.getElementById('googleMap');
-
- 
-	            var map = new google.maps.Map(mapElement, mapOptions);
-
-	            
-	            var marker = new google.maps.Marker({
-	                position: new google.maps.LatLng(23.7286, 90.3854),
-	                map: map,
-	                title: 'Dcare!',
-	                icon: 'images/icons/map.png',
-	                animation:google.maps.Animation.BOUNCE
-
-	            });
-	        }
-	    </script>
+    <!-- Google Map js -->
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");    // 创建Map实例
+        map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+            mapTypes: [
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP
+            ]
+        }));
+        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    </script>
 
 
 
